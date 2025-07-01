@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Genshin';
+  src: url('genshin-font.ttf');
+}
+
+@font-face {
+  font-family: 'Black';
+  src: url('SansSC.otf');
+}
+
+body {
+  font-family: 'Genshin';
+}
+
+body::before {
+  content: ' ';
+  position: fixed;
+  background: url('img/background.jpg') center 0 no-repeat;
+  background-size: cover;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.content_box {
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: saturate(180%) blur(30px);
+  backdrop-filter: saturate(180%) blur(30px);
+  border: 2px solid rgba(100, 100, 100, 0.25);
+  border-radius: 15px;
+  box-shadow: 10px 5px 17px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: 'Genshin';
+}
+
+.pill-path {
+  margin: 3px;
+  background-color: rgba(0, 0, 0, 0.45);
+  font-family: '华文细黑';
+}
+
+.btn-normal-model {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgb(45, 45, 45);
+  padding: 10px 10px;
+  margin: 5px 0px;
+  border-radius: 10px !important;
+  font-family: '华文细黑';
+}
+.btn-normal-model:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: rgb(45, 45, 45);
+}
+.btn-normal-model:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgb(45, 45, 45);
+}
+
+.content a {
+  display: block;
+  text-align: center;
+  font-size: 200%;
+  padding: 2%;
+}
+
+.paimon-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paimon-img img {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
